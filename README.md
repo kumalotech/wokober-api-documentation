@@ -86,7 +86,8 @@ The Milestone Management Module handles the creation, updating, and deletion of 
 - This module ensures that milestones are completed in a specific sequence and can be reordered if necessary.
 
 ### Screenshots:
-*(Insert screenshots showing milestone creation and ordering screens here)*
+
+![alt text](<login page design.webp>)
 
 ### Endpoints:
 
