@@ -39,7 +39,7 @@ The Student Management Module allows for the recording and management of student
 - It includes functionality for registering students, retrieving student details, and updating or deleting student records.
 
 ### Screenshots:
-*(Insert screenshots showing student registration and profile management screens here)*
+*(screenshots showing student registration and profile management screens here)*
 
 ### Endpoints:
 
@@ -63,7 +63,7 @@ The Project Management Module is central to the student’s learning process. Th
 - Projects can be detailed with descriptions and linked to specific students for better tracking.
 
 ### Screenshots:
-*(Insert screenshots showing project creation and progress tracking screens here)*
+*(screenshots showing project creation and progress tracking screens here)*
 
 ### Endpoints:
 
@@ -86,7 +86,7 @@ The Milestone Management Module handles the creation, updating, and deletion of 
 - This module ensures that milestones are completed in a specific sequence and can be reordered if necessary.
 
 ### Screenshots:
-*(Insert screenshots showing milestone creation and ordering screens here)*
+*(screenshots showing milestone creation and ordering screens here)*
 
 ### Endpoints:
 
@@ -109,7 +109,7 @@ The Assessment and Feedback Module allows tutors to record detailed assessments 
 - Tutors can link assessments to specific milestones and provide feedback that helps improve AI-generated content.
 
 ### Screenshots:
-*(Insert screenshots showing assessment recording and feedback submission screens here)*
+*(screenshots showing assessment recording and feedback submission screens here)*
 
 ### Endpoints:
 
@@ -134,7 +134,7 @@ The Lesson Plan Management Module allows tutors to generate, version, and manage
 - Tutors can version lesson plans and receive recommendations for additional resources.
 
 ### Screenshots:
-*(Insert screenshots showing lesson plan generation and version management screens here)*
+*(screenshots showing lesson plan generation and version management screens here)*
 
 ### Endpoints:
 
@@ -158,7 +158,7 @@ The Resource Management Module manages the creation, retrieval, and updating of 
 - This module allows tutors to manage resources and link them to specific lesson plans.
 
 ### Screenshots:
-*(Insert screenshots showing resource management screens here)*
+*(screenshots showing resource management screens here)*
 
 ### Endpoints:
 
@@ -181,7 +181,7 @@ The Audit Trail Module records every action performed in the system, providing a
 - It provides detailed logs that can be reviewed for auditing purposes.
 
 ### Screenshots:
-*(Insert screenshots showing audit trail logs and details screens here)*
+*(screenshots showing audit trail logs and details screens here)*
 
 ### Endpoints:
 
@@ -201,7 +201,7 @@ The Dashboard Module provides a high-level overview of key metrics and activitie
 - Different user roles have access to different types of dashboards.
 
 ### Screenshots:
-*(Insert screenshots showing tutor, student, and parent/guardian dashboard views here)*
+*(screenshots showing tutor, student, and parent/guardian dashboard views here)*
 
 ### Endpoints:
 
@@ -222,7 +222,7 @@ The User Management Module allows for the management of user roles and access le
 - It supports CRUD operations for user management and role assignments.
 
 ### Screenshots:
-*(Insert screenshots showing user management screens here)*
+*(screenshots showing user management screens here)*
 
 ### Endpoints:
 
@@ -246,7 +246,7 @@ The Notifications Module handles the delivery of notifications to users about im
 - This module supports creating, scheduling, and managing notifications.
 
 ### Screenshots:
-*(Insert screenshots showing notification management screens here)*
+*(screenshots showing notification management screens here)*
 
 ### Endpoints:
 
