@@ -19,16 +19,14 @@ The Authentication Module handles user registration, login, password management,
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /auth/register                          | POST   | Registers a new user.                                                       |
-| /auth/login                             | POST   | Authenticates a user and returns a token.                                   |
-| /auth/reset-password                    | POST   | Initiates a password reset process.                                         |
-| /auth/update-password                   | PUT    | Updates the user’s password.                                                |
-| /auth/activate-account                  | POST   | Activates a user account.                                                   |
-| /auth/deactivate-account                | POST   | Deactivates a user account.                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint              | Method | Description                                  |
+|-----------------------|--------|----------------------------------------------|
+| /auth/register        | POST   | Registers a new user.                        |
+| /auth/login           | POST   | Authenticates a user and returns a token.    |
+| /auth/reset-password  | POST   | Initiates a password reset process.          |
+| /auth/update-password | PUT    | Updates the user’s password.                 |
+| /auth/activate-account| POST   | Activates a user account.                    |
+| /auth/deactivate-account| POST | Deactivates a user account.                  |
 
 ---
 
@@ -45,16 +43,14 @@ The Student Management Module allows for the recording and management of student
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /students                               | POST   | Registers a new student.                                                    |
-| /students                               | GET    | Retrieves a list of all students.                                           |
-| /students/{id}                          | GET    | Retrieves details of a specific student.                                    |
-| /students/{id}                          | PUT    | Updates student details.                                                    |
-| /students/{id}                          | DELETE | Deletes a student record.                                                   |
-| /students/{id}/progress                 | GET    | Allows parents/guardians to view their child’s progress.                    |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint              | Method | Description                                          |
+|-----------------------|--------|------------------------------------------------------|
+| /students             | POST   | Registers a new student.                             |
+| /students             | GET    | Retrieves a list of all students.                    |
+| /students/{id}        | GET    | Retrieves details of a specific student.             |
+| /students/{id}        | PUT    | Updates student details.                             |
+| /students/{id}        | DELETE | Deletes a student record.                            |
+| /students/{id}/progress| GET   | Allows parents/guardians to view their child’s progress.|
 
 ---
 
@@ -71,15 +67,13 @@ The Project Management Module is central to the student’s learning process. Th
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /projects                               | POST   | Assigns a new project to a student.                                         |
-| /projects                               | GET    | Retrieves a list of all projects.                                           |
-| /projects/{id}                          | GET    | Retrieves details of a specific project.                                    |
-| /projects/{id}                          | PUT    | Updates project details.                                                    |
-| /projects/{id}                          | DELETE | Deletes a project record.                                                   |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint              | Method | Description                                    |
+|-----------------------|--------|------------------------------------------------|
+| /projects             | POST   | Assigns a new project to a student.            |
+| /projects             | GET    | Retrieves a list of all projects.              |
+| /projects/{id}        | GET    | Retrieves details of a specific project.       |
+| /projects/{id}        | PUT    | Updates project details.                       |
+| /projects/{id}        | DELETE | Deletes a project record.                      |
 
 ---
 
@@ -96,15 +90,13 @@ The Milestone Management Module handles the creation, updating, and deletion of 
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /milestones                             | POST   | Creates a new milestone within a specific project, maintaining order.       |
-| /projects/{projectId}/milestones        | GET    | Retrieves a list of milestones for a specific project, in order.            |
-| /milestones/{id}                        | PUT    | Updates details of a specific milestone, maintaining its order within the project. |
-| /milestones/{id}                        | DELETE | Deletes a specific milestone.                                               |
-| /projects/{projectId}/milestones/reorder| POST   | Reorders milestones within a project.                                       |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint                         | Method | Description                                                    |
+|----------------------------------|--------|----------------------------------------------------------------|
+| /milestones                      | POST   | Creates a new milestone within a specific project, maintaining order. |
+| /projects/{projectId}/milestones | GET    | Retrieves a list of milestones for a specific project, in order.  |
+| /milestones/{id}                 | PUT    | Updates details of a specific milestone, maintaining its order within the project. |
+| /milestones/{id}                 | DELETE | Deletes a specific milestone.                                   |
+| /projects/{projectId}/milestones/reorder| POST | Reorders milestones within a project.                          |
 
 ---
 
@@ -121,17 +113,15 @@ The Assessment and Feedback Module allows tutors to record detailed assessments 
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /assessments                            | POST   | Records a new assessment for a project, possibly linked to a specific milestone. |
-| /assessments                            | GET    | Retrieves a list of all assessments.                                        |
-| /assessments/{id}                       | GET    | Retrieves details of a specific assessment.                                 |
-| /assessments/{id}                       | PUT    | Updates an existing assessment.                                             |
-| /assessments/{id}                       | DELETE | Deletes an assessment record.                                               |
-| /assessments/{id}/feedback              | POST   | Allows tutors to provide feedback on the lesson plans or student progress.  |
-| /assessments/auto-generate              | POST   | Generates a quiz or assessment based on project data, possibly tied to a milestone. |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint               | Method | Description                                                    |
+|------------------------|--------|----------------------------------------------------------------|
+| /assessments           | POST   | Records a new assessment for a project, possibly linked to a specific milestone. |
+| /assessments           | GET    | Retrieves a list of all assessments.                           |
+| /assessments/{id}      | GET    | Retrieves details of a specific assessment.                    |
+| /assessments/{id}      | PUT    | Updates an existing assessment.                                |
+| /assessments/{id}      | DELETE | Deletes an assessment record.                                  |
+| /assessments/{id}/feedback | POST| Allows tutors to provide feedback on the lesson plans or student progress. |
+| /assessments/auto-generate| POST| Generates a quiz or assessment based on project data, possibly tied to a milestone. |
 
 ---
 
@@ -148,16 +138,14 @@ The Lesson Plan Management Module allows tutors to generate, version, and manage
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /lesson-plans/generate                  | POST   | Generates a new lesson plan using GPT-4 based on project assessments and student progress. |
-| /lesson-plans                           | GET    | Retrieves all lesson plans, including their versions.                       |
-| /lesson-plans/{id}                      | GET    | Retrieves a specific lesson plan version.                                   |
-| /lesson-plans/{id}                      | PUT    | Updates the content or resources of a lesson plan.                          |
-| /lesson-plans/{id}                      | DELETE | Deletes a specific lesson plan version.                                     |
-| /lesson-plans/{id}/recommend-resources  | POST   | Uses GPT-4 to suggest additional resources based on the lesson plan content. |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint                         | Method | Description                                                    |
+|----------------------------------|--------|----------------------------------------------------------------|
+| /lesson-plans/generate           | POST   | Generates a new lesson plan using GPT-4 based on project assessments and student progress. |
+| /lesson-plans                    | GET    | Retrieves all lesson plans, including their versions.          |
+| /lesson-plans/{id}               | GET    | Retrieves a specific lesson plan version.                      |
+| /lesson-plans/{id}               | PUT    | Updates the content or resources of a lesson plan.             |
+| /lesson-plans/{id}               | DELETE | Deletes a specific lesson plan version.                        |
+| /lesson-plans/{id}/recommend-resources | POST| Uses GPT-4 to suggest additional resources based on the lesson plan content. |
 
 ---
 
@@ -174,15 +162,13 @@ The Resource Management Module manages the creation, retrieval, and updating of 
 
 ### Endpoints:
 
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| Endpoint                                | Method | Description                                                                 |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
-| /resources                              | POST   | Adds a new resource to the system, linked to a lesson plan or standalone.   |
-| /resources                              | GET    | Retrieves a list of all resources.                                          |
-| /resources/{id}                         | GET    | Retrieves details of a specific resource.                                   |
-| /resources/{id}                         | PUT    | Updates resource details.                                                   |
-| /resources/{id}                         | DELETE | Deletes a resource record.                                                  |
-+----------------------------------------+--------+-----------------------------------------------------------------------------+
+| Endpoint              | Method | Description                                                    |
+|-----------------------|--------|----------------------------------------------------------------|
+| /resources            | POST   | Adds a new resource to the system, linked to a lesson plan or standalone. |
+| /resources            | GET    | Retrieves a list of all resources.                             |
+| /resources/{id}       | GET    | Retrieves details of a specific resource.                      |
+| /resources/{id}       | PUT    | Updates resource details.                                      |
+| /resources/{id}       | DELETE | Deletes a resource record.                                     |
 
 ---
 
@@ -199,11 +185,12 @@ The Audit Trail Module records every action performed in the system, providing a
 
 ### Endpoints:
 
-```markdown
-| Endpoint                                | Method | Description                                                                 | Request                                                                                      | Response                                                                                           |
-|-----------------------------------------|--------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| /audit-trails                           | GET    | Retrieves all audit trails, recording actions performed on various entities.| -                                                                                            | [ { "entityType": "String", "entityId": "UUID", "action": "String", "performedBy": "String", "timestamp": "DateTime" } ] |
-| /audit-trails/{entityType}/{entityId}   | GET    | Retrieves audit trail logs for a specific entity.                           | -                                                                                            | [ { "action": "String", "performedBy": "String", "timestamp": "DateTime" } ]                       |
+| Endpoint                         | Method | Description                                                    |
+|----------------------------------|--------|----------------------------------------------------------------|
+| /audit-trails                    | GET    | Retrieves all audit trails, recording actions performed on various entities. |
+| /audit-trails/{entityType}/{entityId}| GET | Retrieves audit trail logs for a specific entity.              |
+
+---
 
 ## 9. **Dashboard Module**
 
@@ -218,59 +205,59 @@ The Dashboard Module provides a high-level overview of key metrics and activitie
 
 ### Endpoints:
 
-```markdown
-| Endpoint                                | Method | Description                                                                 | Request                                                                                      | Response                                                                                           |
-|-----------------------------------------|--------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| /dashboard/tutor/{id}                   | GET    | Retrieves a summary of a tutor’s dashboard, including student progress, areas of difficulty, lesson plan effectiveness, and upcoming assessments. | -                                                                                            | { "tutorId": "UUID", "studentsProgress": ["StudentProgress"], "areasOfDifficulty": ["String"], "lessonPlanEffectiveness": ["String"], "upcomingEvents": ["Event"] } |
-| /dashboard/student/{id}                 | GET    | Retrieves a summary of a student’s dashboard, including project status, upcoming assessments, and feedback. | -                                                                                            | { "studentId": "UUID", "projectStatus": "String", "upcomingAssessments": ["Assessment"], "feedback": ["String"] } |
-| /dashboard/parent/{id}                  | GET    | Retrieves a summary of a parent/guardian’s dashboard, including their child’s progress and upcoming events. | -                                                                                            | { "parentId": "UUID", "childProgress": ["StudentProgress"], "upcomingEvents": ["Event"] }          |
+| Endpoint              | Method | Description                                    |
+|-----------------------|--------|------------------------------------------------|
+| /dashboard/tutor/{id} | GET    | Retrieves a summary of a tutor’s dashboard, including student progress, areas of difficulty, lesson plan effectiveness, and upcoming assessments. |
+| /dashboard/student/{id}| GET   | Retrieves a summary of a student’s dashboard, including project status, upcoming assessments, and feedback. |
+| /dashboard/parent/{id}| GET    | Retrieves a summary of a parent/guardian’s dashboard, including their child’s progress and upcoming events. |
 
+---
 
-## 10. **Resource Management Module**
+## 10. **User Management Module**
 
-The Resource Management Module manages the creation, retrieval, and updating of educational resources linked to lesson plans. The system also suggests resources dynamically based on content and past assessments.
+The User Management Module allows for the management of user roles and access levels. It handles the creation, updating, and deletion of users, and manages their roles (e.g., tutor, student, parent/guardian).
 
 ### Description:
-- Resources are integral to supporting lesson plans and providing additional learning material.
-- This module allows tutors to manage resources and link them to specific lesson plans.
+- This module is essential for maintaining the system's security and ensuring users have the correct permissions.
+- It supports CRUD operations for user management and role assignments.
 
 ### Screenshots:
-*(Insert screenshots showing resource management screens here)*
+*(Insert screenshots showing user management screens here)*
 
 ### Endpoints:
 
-```markdown
-| Endpoint                                | Method | Description                                                                 | Request                                                                                      | Response                                                                                           |
-|-----------------------------------------|--------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| /resources                              | POST   | Adds a new resource to the system, linked to a lesson plan or standalone.   | { "title": "String", "url": "String", "description": "String", "linkedLessonPlanId": "UUID" } | { "resourceId": "UUID", "message": "Resource created successfully" }                              |
-| /resources                              | GET    | Retrieves a list of all resources.                                          | -                                                                                            | [ { "resourceId": "UUID", "title": "String", "url": "String", "description": "String" } ]          |
-| /resources/{id}                         | GET    | Retrieves details of a specific resource.                                   | -                                                                                            | { "resourceId": "UUID", "title": "String", "url": "String", "description": "String" }              |
-| /resources/{id}                         | PUT    | Updates resource details.                                                   | { "title": "String", "url": "String", "description": "String" }                              | { "message": "Resource updated successfully" }                                                     |
-| /resources/{id}                         | DELETE | Deletes a resource record.                                                  | -                                                                                            | { "message": "Resource deleted successfully" }                                                     |
+| Endpoint              | Method | Description                                   |
+|-----------------------|--------|-----------------------------------------------|
+| /users                | POST   | Creates a new user.                           |
+| /users                | GET    | Retrieves a list of all users.                |
+| /users/{id}           | GET    | Retrieves details of a specific user.         |
+| /users/{id}           | PUT    | Updates a user’s details.                     |
+| /users/{id}           | DELETE | Deletes a user.                               |
+| /users/{id}/role      | PUT    | Assigns or updates the role of a user.        |
 
+---
 
-## 11. **Lesson Plan Management Module**
+## 11. **Notifications Module**
 
-The Lesson Plan Management Module allows tutors to generate, version, and manage lesson plans using GPT-4. The system can generate multiple versions of a lesson plan, provide dynamic resource recommendations, and integrate auto-generated assessments.
+The Notifications Module handles the delivery of notifications to users about important events, deadlines, and system updates. This module ensures that users are informed about key actions and reminders.
 
 ### Description:
-- This module leverages AI to create lesson plans based on student assessments and progress.
-- Tutors can version lesson plans and receive recommendations for additional resources.
+- Notifications can be sent via email, SMS, or in-app messages.
+- This module supports creating, scheduling, and managing notifications.
 
 ### Screenshots:
-*(Insert screenshots showing lesson plan generation and version management screens here)*
+*(Insert screenshots showing notification management screens here)*
 
 ### Endpoints:
 
-```markdown
-| Endpoint                                | Method | Description                                                                 | Request                                                                                      | Response                                                                                           |
-|-----------------------------------------|--------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| /lesson-plans/generate                  | POST   | Generates a new lesson plan using GPT-4 based on project assessments and student progress. | { "projectId": "UUID", "version": "int", "previousAssessments": ["UUID"], "additionalContext": "String" } | { "lessonPlanId": "UUID", "version": "int", "content": "String", "message": "Lesson plan generated successfully" } |
-| /lesson-plans                           | GET    | Retrieves all lesson plans, including their versions.                       | -                                                                                            | [ { "lessonPlanId": "UUID", "projectId": "UUID", "version": "int", "content": "String" } ]         |
-| /lesson-plans/{id}                      | GET    | Retrieves a specific lesson plan version.                                   | -                                                                                            | { "lessonPlanId": "UUID", "projectId": "UUID", "version": "int", "content": "String", "resources": ["Resource"] } |
-| /lesson-plans/{id}                      | PUT    | Updates the content or resources of a lesson plan.                          | { "content": "String", "resources": ["Resource"] }                                           | { "message": "Lesson plan updated successfully" }                                                  |
-| /lesson-plans/{id}                      | DELETE | Deletes a specific lesson plan version.                                     | -                                                                                            | { "message": "Lesson plan deleted successfully" }                                                  |
-| /lesson-plans/{id}/recommend-resources  | POST   | Uses GPT-4 to suggest additional resources based on the lesson plan content. | { "content": "String", "previousAssessments": ["UUID"] }                                     | { "resources": ["Resource"], "message": "Resources recommended successfully" }                    |
+| Endpoint                      | Method | Description                                |
+|-------------------------------|--------|--------------------------------------------|
+| /notifications                 | POST   | Creates a new notification.                |
+| /notifications                 | GET    | Retrieves a list of all notifications.     |
+| /notifications/{id}            | GET    | Retrieves details of a specific notification. |
+| /notifications/{id}            | PUT    | Updates a notification’s details.          |
+| /notifications/{id}            | DELETE | Deletes a notification.                    |
+| /notifications/send            | POST   | Sends out notifications immediately.       |
 
 
 # Modules in Detail
