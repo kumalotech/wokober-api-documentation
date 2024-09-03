@@ -15,7 +15,7 @@ The Authentication Module handles user registration, login, password management,
 - It includes endpoints for creating new accounts, logging in, resetting passwords, and activating or deactivating accounts.
 
 ### Screenshots:
-*(Insert screenshots showing the user registration and login pages here)*
+![alt text](<login page design.webp>)
 
 ### Endpoints:
 
@@ -86,8 +86,7 @@ The Milestone Management Module handles the creation, updating, and deletion of 
 - This module ensures that milestones are completed in a specific sequence and can be reordered if necessary.
 
 ### Screenshots:
-
-![alt text](<login page design.webp>)
+*(Insert screenshots showing milestone creation and ordering screens here)*
 
 ### Endpoints:
 
